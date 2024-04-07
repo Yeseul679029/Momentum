@@ -27,9 +27,25 @@ const quotes = [
         quote:"Nothing can be instead of you.",
         trans:"어떤 것이라도 너를 대신할 수는 없어.",
     },
+    {
+        quote:"Seize the day.",
+        trans:"오늘을 즐기세요.",
+    },
+    {
+        quote:"You only live once.",
+        trans:"인생은 한 번 뿐이에요.",
+    },
+    {
+        quote:"This too shall pass away.",
+        trans:"이 또한 지나갈 겁니다.",
+    },
+    {
+        quote:"I'm really glad I metyou.",
+        trans:"당신을 만나서 정말 좋았어.",
+    },
 ]
 
-const quote = document.querySelector("#quote span:first-child");
+const quote = document.querySelector("#quote p");
 const trans = document.querySelector("#quote span:last-child");
 
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];

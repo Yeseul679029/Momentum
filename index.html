@@ -3,22 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Satisfy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Todolist 💡✏📝📌</title>
 </head>
 <body>
-    <form class="hidden" id="login-form">
-        <input type="text" 
-        placeholder="What your name?" 
-        maxlength="10"
-        required/>
-        <button>Log In</button>
-    </form>
     <button class="hidden" id="logout-btn">Log Out</button>
-    <h2 id="clock">00:00</h2>
-    <h1 class="hidden" id="greeting"></h1>
-    <div id="quote">
-        <span></span>
+    <div class="center">
+        <h2 id="clock">00:00</h2>
+        <h2 id="day">0000-00-00</h2>
+        <form class="hidden" id="login-form">
+            <input type="text" 
+            placeholder="What your name?" 
+            maxlength="10"
+            required/>
+            <!-- <button>Log In</button> -->
+        </form>
+        <h1 class="hidden" id="greeting"></h1>
+    </div>
+    <div class="hidden" id="todo-box">
+        <form  id="todo-form">
+            <input type="text" placeholder="Write a To Do and Press Enter" required/>
+        </form>
+        <ul id="todo-list"></ul>
+    </div>
+    <div id="quote" class=".dm-serif text-regular">
+        <p></p>
         <span></span>
     </div>
     <div id="weather">
@@ -30,5 +42,6 @@
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/todo.js"></script>
 </body>
 </html>

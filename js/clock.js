@@ -1,4 +1,5 @@
 const clock = document.querySelector("h2#clock");
+const today = document.querySelector("h2#day");
 
 function getClock(){
     const date = new Date();
@@ -8,7 +9,9 @@ function getClock(){
     const year = date.getFullYear();
     const month = String(date.getMonth()+1).padStart(2,"0");
     const day = String(date.getDate()).padStart(2,"0");
-    clock.innerText = `${hours}:${minutes}:${seconds} ${year}-${month}-${day}`;
+    // clock.innerText = `${hours}:${minutes}:${seconds} ${year}-${month}-${day}`;
+    clock.innerText = `${hours}:${minutes}`;
+    today.innerText = `${year}-${month}-${day}`;
 
 }
 
