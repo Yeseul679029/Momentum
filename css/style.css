@@ -3,7 +3,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: black;
+    color: white;
     text-align: center;
 }
 /* 중앙정렬, 시계, 로그인 */
@@ -12,6 +12,25 @@ body {
     height: 300px;
     margin: 12% auto;
 }
+
+/* 시계 */
+#clock{
+    padding: 15px 0px;
+    font-size: 6em;
+    margin: 0;
+    font-family: "Merriweather", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+/* 날짜 */
+#day{
+    font-size: 2em;   
+    margin: 0;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
 /* 로그인창 */
 #login-form input{
     text-align: center;
@@ -20,6 +39,11 @@ body {
     width: 190px;
     border-radius: 10px;
     border: 0px;
+}
+#greeting{
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
 }
 /* 로그아웃버튼 */
 #logout-btn {
@@ -31,7 +55,7 @@ body {
     left: 30px;
     border: 0px;
     background: none;
-    color: black;
+    color: white;
 }
 
 /* 투두리스트 */
@@ -43,7 +67,7 @@ body {
     position: absolute;
     top: 15%;
     right: 10%;
-    
+    color: black;
 }
 #todo-form input{
     text-align: center;
@@ -71,6 +95,9 @@ body {
 }
 #todo-list li button{
     float: right;
+    border: 0px;
+    background: none;
+    cursor: pointer;
 }
 #todo-list li span {
     cursor: pointer;
@@ -78,18 +105,6 @@ body {
     font-weight: bold;
 }
 
-
-/* 시계 */
-#clock{
-    padding: 15px 0px;
-    font-size: 6em;
-    margin: 0;
-}
-/* 날짜 */
-#day{
-    font-size: 2.5em;   
-     margin: 0;
-}
 
 /* 명언 */
 #quote{
@@ -100,8 +115,8 @@ body {
     width: 100%;
     left: 0;
     right: 0;
-    bottom: 10px;
-    padding: 5px 0;
+    bottom: 0px;
+    padding: 15px 0;
     
 }
 #quote p {
