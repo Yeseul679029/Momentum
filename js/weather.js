@@ -2,7 +2,6 @@ const API_KEY = "b02d7d4b219a30eccd886f74d0f48e69";
 
 
 function onGeoOk(position){
-    console.log(position);
     const lat = position.coords.latitude;
     const lon = position.coords.longitude;
     const LANGUAGE = "kr"; 

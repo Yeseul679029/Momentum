@@ -6,22 +6,11 @@ body {
     color: white;
     text-align: center;
 }
-a {
-    text-decoration: none;
-}
-.container-fluid{
-    align-items: center;
-}
 /* 중앙정렬, 시계, 로그인 */
-.center-box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .center{
-    width: 350px;
-    height: 350px;
-    margin: 0 auto;
+    width: 500px;
+    height: 300px;
+    margin: 12% auto;
 }
 
 /* 시계 */
@@ -42,18 +31,6 @@ a {
     font-style: normal;
 }
 
-#site-click {
-    background-color: rgb(255,255,255,0.5); 
-    margin-top: 10%;
-    border-radius: 20px; 
-    list-style: none; 
-    padding: 10px 0;
-}
-#site-click li{
-    display: inline-block;
-    margin: 0 15px;
-}
-
 /* 로그인창 */
 #login-form input{
     text-align: center;
@@ -67,36 +44,29 @@ a {
     font-family: "Merriweather", serif;
     font-weight: 700;
     font-style: normal;
-    margin: 10px 0;
 }
 /* 로그아웃버튼 */
 #logout-btn {
     font-weight: bold;
     letter-spacing: 0;
     font-size: 1.2em;
-    float: left;
+    position: absolute;
+    top: 10px;
+    left: 30px;
     border: 0px;
     background: none;
     color: white;
-}
-
-/* 날씨, 위치 */
-#weather {
-    float: right;
-    font-weight: bold;
-    font-size: 1.3em;
-    margin-right: 20px;
 }
 
 /* 투두리스트 */
 #todo-box{
     background-color: rgb(255,255,255,0.5);
     border-radius: 20px;
-    width: 80%;
-    min-width: 300px;
-    max-width: 400px;
+    width: 300px;
     height: 500px;
-    margin: 0 auto;
+    position: absolute;
+    top: 15%;
+    right: 10%;
     color: black;
 }
 #todo-form input{
@@ -163,7 +133,14 @@ a {
     font-size: 0.6em;
 }
   
-
+/* 날씨, 위치 */
+#weather {
+    font-weight: bold;
+    font-size: 1.3em;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
 
 /* 속성 */
 .hidden {
